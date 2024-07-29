@@ -1,0 +1,22 @@
+Questions:
+How would you store passwords securely?
+
+Answer
+Hashing is the process of converting a password into a fixed-length string of characters, which is typically a hash code. Hashing is a one-way function, meaning it’s computationally infeasible to reverse the process and retrieve the original password.
+Use a cryptographic hash function such as 
+1)bcrypt,
+2)Argon2
+3)Sha-256
+
+Explain the process of generating and validating a JWT.
+Generating a JWT
+Header:
+
+1)The header typically consists of two parts: the type of the token, which is JWT, and the signing algorithm being used, such as HMAC SHA256 or RSA.
+
+2).The payload contains the claims. Claims are statements about an entity (typically, the user) and additional data
+3)Validating a JWT
+Receive the Token:
+When a client sends a JWT, it is usually included in the HTTP Authorization header.
+
+4) To decode and validate the JWT, you need the secret key that was used to sign the token. This step verifies the integrity of the token and extracts the payload.
