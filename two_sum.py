@@ -1,11 +1,16 @@
 from typing import List, Tuple
+
 def twoSum(array:List[int], target: int  ) -> List[int]:
     """
-    sumary_line
+    Finds two indices of the two numbers such 
+    that they add up to target.
     
-    Keyword arguments:
-    argument -- description
-    Return: return_description
+    Args
+    array(int): A list of integers
+    target(int): The sum to find
+    
+    Return: 
+    Indices of the number that adds up to the sum
     """
     # A dictionary to store each number and it indexex
     num_index = { }
@@ -21,6 +26,3 @@ def twoSum(array:List[int], target: int  ) -> List[int]:
 
         num_index[number] = index
     return []
-
-
-print(twoSum([2,7,11,15],9))
